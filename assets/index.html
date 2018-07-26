@@ -12,7 +12,7 @@
          <!-- GEOLOCALIZACIÓN -->
          <button onclick="findMe()">Mostrar ubicación</button>
     <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjSRNxL_Kp2q8mVTNf3uM0jB7iaP1sgRU"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAdZXOFa8gSRsJa6lnUJg2kW20-3oaXSw"></script>
          <script>
              function findMe(){
                  var output = document.getElementById('map');
@@ -26,8 +26,8 @@
                  function localizacion(posicion){
                      var latitude = posicion.coords.latitude;
                      var longitude = posicion.coords.longitude;
-                     var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&size=600x300&markers=color:red%7C"+latitude+","+longitude+"&key=YOUR_API_KEY";
-                     output.innerHTML ="<img src='"+imgURL+"'>";
+                     var imgURL = "https://maps.googleapis.com/maps/api/staticmap?center="+latitude+","+longitude+"&size=600x300&markers=color:red%7C"+latitude+","+longitude+"&key=AIzaSyCAdZXOFa8gSRsJa6lnUJg2kW20-3oaXSw";
+				output.innerHTML ="<img src='"+imgURL+"'>";
                      
                  }
                  function error(){
